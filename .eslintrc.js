@@ -1,13 +1,12 @@
 module.exports = {
     root: true,
     parser: "@typescript-eslint/parser",
-    plugins: ["workspaces", "@typescript-eslint"],
+    plugins: ["@typescript-eslint"],
     extends: [
         "eslint:recommended",
         "plugin:react/recommended",
         "prettier",
         "plugin:@typescript-eslint/recommended",
-        "next"
     ],
     globals: {
         JSX: "readonly",

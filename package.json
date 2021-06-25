@@ -13,25 +13,37 @@
         "node": ">=12.0.0"
     },
     "scripts": {
-        "prepare": "yarn tsup"
+        "prepare": "yarn tsup",
+        "test": "node dist/test.js"
     },
     "devDependencies": {
+        "@types/jju": "^1.4.1",
         "@types/node": "^15.12.4",
+        "@types/react": "^17.0.11",
+        "@types/react-dom": "^17.0.8",
+        "@types/react-reconciler": "^0.26.1",
         "@typescript-eslint/eslint-plugin": "^4.28.0",
         "@typescript-eslint/parser": "^4.28.0",
         "eslint": "^7.29.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-react": "^7.24.0",
+        "jju": "^1.4.0",
         "npm-check-updates": "^11.7.1",
         "prettier": "^2.3.1",
         "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "source-map-support": "^0.5.19",
         "tsup": "^4.11.2",
         "typescript": "^4.3.4"
     },
     "peerDependencies": {
-        "react": "^17.0.2"
+        "react": "^17.0.2",
+        "react-dom": "*"
     },
     "optionalDependencies": {
         "canvas": "^2.8.0"
+    },
+    "dependencies": {
+        "react-reconciler": "^0.26.2"
     }
 }
